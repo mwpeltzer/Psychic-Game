@@ -14,32 +14,35 @@
 	var guessesSofar = []; //array to capture guessed letters
 
 		var computerRandom = computerChoices[Math.floor(Math.random() * computerChoices.length)];
-    console.log('Computer: ', computerRandom);	
+    	console.log('Computer: ', computerRandom);	
 
 
 // 5. Function for when user presses a key
-	document.onkeyup = function(event) {
+		document.onkeyup = function(event) {
 		
 // 6. Determines what key was pressed
-	var userGuess = event.key;
-	console.log(userGuess);
+		
+		var userGuess = event.key;
+		console.log(userGuess);
+
 // 7. stores your guess in the array
-	guessesSofar.push(guessesSofar);  
-	
-// i need to create something that tells the computer what letters are selected 
-// so that it knows when they match or not...
-// Only run the code if these variables are true!!!
+		
+		guessesSofar.push(userGuess);  
+
 
 // If user guess = computer random, user gets a + 1 in wins, guessesLeft resets
 		if (userGuess === computerRandom) {
 			wins++;
 			guessesLeft = 9;
+			guessesSofar.length = 0; //resets array to zero
+
 			console.log(wins);
 // If guesses left = 0, losses gets + 1 
-		} else if (guessesLeft === "0") {
+		} else if (guessesLeft === 0) {
 		  losses++; 
 		  guessesLeft = 9;
-		  console.log(losses);
+		  guessesSofar.length = 0;
+		  console.log(guessesSofar.lenth);
 // If none of the above is true, guesses left gets - 1 
 		} else {
 			guessesLeft--; 
@@ -51,20 +54,21 @@
 	// Displaying tallies in html
 
 			 var html = //"<h1>The Psychic Game</h1>" + 
-        "<p>Guess what letter I'm thinking of!</p>" +
+        "<p>Guess What Letter I'm Thinking Of?</p>" +
         "<p>Total Wins: " + 
         wins + 
         "</p>" +
-        "<p>Total Losses: " + 
+        "<p>Losses: " + 
         losses + 
         "</p>" +
         "<p>Guesses Left: " + 
         guessesLeft + 
         "</p>" +
-        "<p>Your Guesses so far: " +
+        "<p>Your Guesses So Far: " +
         guessesSofar +
         "</p>";
 		
+		console.log()
 			
 	document.querySelector('#game').innerHTML = html; 
 
