@@ -35,10 +35,12 @@
 			wins++;
 			guessesLeft = 9;
 			guessesSofar.length = 0; //resets array to zero
+			computerRandom = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+	    	console.log('Computer: ', computerRandom);	
 
 			console.log(wins);
 // If guesses left = 0, losses gets + 1 
-		} else if (guessesLeft === 0) {
+		} else if (guessesLeft === 1) {
 		  losses++; 
 		  guessesLeft = 9;
 		  guessesSofar.length = 0;
