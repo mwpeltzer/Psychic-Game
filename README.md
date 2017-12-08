@@ -10,7 +10,7 @@
 
 - If not, keep selecting until you are out of guesses
 
-##Requirements
+## Requirements
 
 - Create a game that pits the user against the computer 
 
@@ -24,14 +24,14 @@
 	- Guesses Left
 	- Your Guesses Made So Far
 
-##Technologies Used
+## Technologies Used
 
 Javascript
 
 HTML
 
 
-##Code Example
+## Code Example
 
 - Random Letter Generator
 
