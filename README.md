@@ -1,6 +1,6 @@
 # Psychic-Game
 
-##How To Play The Game
+## How To Play The Game
 
 - Load the page
 
