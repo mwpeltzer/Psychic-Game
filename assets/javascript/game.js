@@ -1,20 +1,15 @@
-
-
-
-// 2. Get User input (pick of any letter) - store in variable for later use
-
-// 3. Creates an array that lists out all of the options (all the letters of the alphabet).
+// Stores an array in the variable 'computerChoices' that lists lists and splits all the letters in the alphabet
  
 	var computerChoices = "abcdefghijklmnopqrstuvwxyz".split(""); 
 
-// 4. Creating variables to hold the number of wins, losses, guesses lest and guesses so far. They start at 0.
+//  Creating variables to hold the number of wins, losses, guesses lest and guesses so far. They start at 0.
 	var wins = 0;
 	var losses = 0;
 	var guessesLeft = 9;
 	var guessesSofar = []; //array to capture guessed letters
 
-		var computerRandom = computerChoices[Math.floor(Math.random() * computerChoices.length)];
-    	console.log('Computer: ', computerRandom);	
+	var computerRandom = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+    console.log('Computer: ', computerRandom);	
 
 
 // 5. Function for when user presses a key

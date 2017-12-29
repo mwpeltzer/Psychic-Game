@@ -1,0 +1,19 @@
+body {
+	text-decoration-color: red;
+	text-align: center;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-style: italic;
+	background-color: orange;
+	background-image: url('http://file.ficfun.com/group1/M00/00/03/rB84XVmkWtiACO3tAAUWCFmvLQQ735.jpg');
+
+}
+
+#game {
+	color: white;
+	outline-color: black;
+	font-size: 32px;
+	font-weight: bold;
+	font-border: black;
+	text-shadow: 1px 1px 1px #000; 
+
+}
